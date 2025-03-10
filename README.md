@@ -1,8 +1,7 @@
-# 👨🏻‍💻 Porfolio para programadores y desarrolladores
+# 👨🏻‍💻 My porfolio
 
 <div align="center">
-<a href="https://porfolio.dev/">
-<img src="./public/porfolio.webp">
+<a href="https://martibusquets.cat/">
 </a>
 <p></p>
 </div>
@@ -18,10 +17,3 @@
 
 </div>
 
-## 🫂 Contribuidores
-
-<a href="https://github.com/midudev/porfolio.dev/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=midudev/porfolio.dev" />
-</a>
-
-<p></p>
