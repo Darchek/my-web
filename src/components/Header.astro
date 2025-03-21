@@ -1,11 +1,16 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro"
+import { getLangFromCookie, getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const lang2 = getLangFromCookie(Astro.cookies);
+const t = useTranslations(lang);
 
 const navItems = [
   {
-    title: "Experiencia",
-    label: "experiencia",
-    url: "/#experiencia",
+    title: t('nav.experience'),
+    label: t('nav.experience').toLowerCase(),
+    url: `/#${t('nav.experience').toLowerCase()}`,
   },
   {
     title: "Proyectos",
@@ -13,9 +18,9 @@ const navItems = [
     url: "/#proyectos",
   },
   {
-    title: "Sobre mí",
-    label: "sobre-mi",
-    url: "/#sobre-mi",
+    title: t('nav.about'),
+    label: t('nav.about').toLowerCase(),
+    url: `/#${t('nav.about').toLowerCase()}`,
   },
   {
     title: "Contacto",

@@ -1,5 +1,6 @@
 ---
-const currentYear = new Date().getFullYear()
+const currentYear = new Date().getFullYear();
+import LanguagePicker from '../components/LanguagePicker.astro';
 ---
 
 <footer
@@ -10,8 +11,8 @@ const currentYear = new Date().getFullYear()
   >
     <span class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90"
       >© {currentYear}
-      <a href="https://midu.dev/" class="hover:underline">midudev</a>. Casi
-      todos los derechos reservados
+      <a href="https://martibusquets.cat" class="hover:underline">Martí Busquets</a>. 
+      With love and <a href="https://midu.dev" class="hover:underline">midudev</a> help
     </span>
     <ul
       class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
