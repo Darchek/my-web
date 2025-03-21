@@ -4,6 +4,7 @@ import Layout from "@/layouts/Layout.astro"
 import AboutMe from "@/components/AboutMe.astro"
 import Briefcase from "@/components/icons/Briefcase.astro"
 import CodeIcon from "@/components/icons/Code.astro"
+import Construction from "@/components/icons/Construction.astro"
 import Experience from "@/components/Experience.astro"
 import ProfileCheck from "@/components/icons/ProfileCheck.astro"
 import Projects from "@/components/Projects.astro"
@@ -17,35 +18,52 @@ import TitleSection from "@/components/TitleSection.astro"
   description="Hire Martí to automatize any process you need"
 >
   <main class="px-4">
+
     <SectionContainer class="py-16 md:py-36">
       <Hero>
       </slot>
     </Hero>
     </SectionContainer>
+
     <div class="space-y-24">
-    <SectionContainer id="experiencia">
-      <TitleSection>
-        <Briefcase class="size-8" />
-        Experience
-      </TitleSection>
-      <Experience />
-    </SectionContainer>
+      <div class="flex min-h-[50vh] flex-col items-center justify-center gap-6 text-center">
+        <Construction class="h-16 w-16 text-gray-800 dark:text-gray-200 animate-bounce-rotate" />
+        <p class="text-3xl font-medium text-gray-800 dark:text-gray-200">
+          Crafting portfolio
+          <span class="block text-xl mt-2 text-gray-600 dark:text-gray-400">Stay tuned...</span>
+        </p>
+      </div>
+    </div>
 
-    <SectionContainer id="proyectos">
-      <TitleSection>
-        <CodeIcon class="size-7" />
-        Projects
-      </TitleSection>
-      <Projects />
-    </SectionContainer>
+    <!-- 
+    <div class="space-y-24">
 
-    <SectionContainer id="sobre-mi">
-      <TitleSection>
-        <ProfileCheck class="size-8" />
-        About me
-      </TitleSection>
-      <AboutMe />
-    </SectionContainer>
-  </div>
+      <SectionContainer id="experiencia">
+        <TitleSection>
+          <Briefcase class="size-8" />
+          Experience
+        </TitleSection>
+        <Experience />
+      </SectionContainer>
+
+      <SectionContainer id="proyectos">
+        <TitleSection>
+          <CodeIcon class="size-7" />
+          Projects
+        </TitleSection>
+        <Projects />
+      </SectionContainer>
+
+      <SectionContainer id="sobre-mi">
+        <TitleSection>
+          <ProfileCheck class="size-8" />
+          About me
+        </TitleSection>
+        <AboutMe />
+      </SectionContainer>
+
+    </div>
+  -->
+
   </main>
 </Layout>
