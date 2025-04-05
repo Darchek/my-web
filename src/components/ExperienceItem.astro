@@ -134,8 +134,8 @@ const { title, company, description, link, date, text } = Astro.props
     {description}
   </div>
   <div class="relative flex flex-col pb-4 text-gray-600 dark:text-gray-300 md:col-span-5">
-    <input type="checkbox" id=`arrow-toggle-${title}` />
-    <label for=`arrow-toggle-${title}` class="cursor-pointer inline-flex items-center">
+    <input type="checkbox" id={`arrow-toggle-${title}`} checked={true} />
+    <label for={`arrow-toggle-${title}`} class="cursor-pointer inline-flex items-center">
     {
       link && (
         <LinkInline>
