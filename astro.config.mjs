@@ -15,6 +15,8 @@ export default defineConfig({
     locales: ["ca", "en", "es"],
     defaultLocale: "en",
   },
-
+  experimental: {
+    svg: true,
+  },
   adapter: vercel()
 })
